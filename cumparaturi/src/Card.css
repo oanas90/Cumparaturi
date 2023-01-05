@@ -1,0 +1,29 @@
+.divCard{
+    box-sizing: border-box;
+    margin-top: 20px;
+    width:250px;
+    height:200px;
+    background-color: black;
+    color:white;
+    padding: 15px;
+    text-align: left;
+
+}
+.mark
+{
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    margin-top: 30px;
+}
+.btnCompleted{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.btnPlus{
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+.btnMinus{
+    margin-top: 10px;
+}
