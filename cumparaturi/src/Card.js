@@ -11,7 +11,12 @@ const Card = ({ item, handleIncrement, handleDecrement, markCompleted , markInco
         <button className='btnPlus' type='button' onClick={() => handleIncrement(item.key)}>+</button>
         <button className='btnMinus' type='button' onClick={() => handleDecrement(item.key)}>-</button>
         <div className='mark'>
-            <button className='btnCompleted' type='button' onClick={() => markCompleted(item.key)}>Mark as {item.completed ? 'incompleted' : 'completed'}</button>
+          {!item.completed  &&
+            <button className='btnCompleted' type='button' onClick={() => markCompleted(item.key)}>Mark as completed</button>
+          }
+          {item.completed  &&
+            <button className='btnCompleted' type='button' onClick={() => markIncompleted(item.key)}>Mark as incompleted</button>
+          }
         </div>
       </div>
     );
